@@ -1155,10 +1155,11 @@ section {
     }
 
     .hero-content {
-        flex-direction: column;
+        /* Base is grid; keep grid and center items for mobile */
         text-align: center;
         gap: 2rem;
         padding: 0 var(--mobile-padding);
+        justify-items: center;
     }
 
     .hero-title {
@@ -1180,6 +1181,11 @@ section {
     .about-content {
         grid-template-columns: 1fr;
         gap: 2rem;
+    }
+
+    /* Center the subject within circular image on mobile */
+    .hero-profile-img {
+        object-position: 50% 35% !important;
     }
 
     .contact-content {
